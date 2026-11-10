@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+</head>
+<body>
+    <h1>Editar Categoria</h1>
+
+    <form action="/categoria/Editar" method="post">
+
+        <input type="hidden" name="id" id="id" value="<%= dado.id_categoria %>">
+
+        <label for="nome">Nome</label>
+        <input type="text" Name=""nome id="nome" value="<%= dado.nome%>">
+
+        <label for="descricao">Descrição</label>
+        <input type="text" name="descricao" id="descricao" value="<%= dado.descricao %>">
+    </form>
+</body>
+</html>

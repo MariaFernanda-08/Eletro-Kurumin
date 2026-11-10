@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <h1>Lista de Categoria</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <% for(let dado of dados){ %> 
+                <tr>
+                    <td><%= dado.nome %></td>
+                    <td><%= dado.descricao %></td>
+                    <td> 
+                        <a href="/categoria/editar/ <%= dado.id_categoria %>">Editar</a>
+                        <a href="/categoria/apagar/ <%= dado.id_categoria %>">Apagar</a>
+                    </td>
+                </tr>
+            <% } %> 
+        </tbody>
+    </table>
+</body>
+</html>
